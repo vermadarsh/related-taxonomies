@@ -1,0 +1,13 @@
+.gbrt-related-taxonomies-block {
+    padding: 25px;
+	border: 1px solid #b2b2b2;
+	text-align: center;
+}
+.gbrt-related-taxonomies-block span {
+	margin-right: 10px;
+	text-transform: uppercase;
+}
+
+.gbrt-related-taxonomies-block span a {
+	text-decoration: none;
+}
