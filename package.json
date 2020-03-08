@@ -5,11 +5,17 @@
   "main": "index.js",
   "scripts": {
     "start": "wp-scripts start",
-    "build": "wp-scripts build"
+    "build": "wp-scripts build",
+    "lint:js": "wp-scripts lint-js src/index.js",
+    "lint:js-fix": "wp-scripts lint-js src/index.js --fix",
+    "lint:css": "wp-scripts lint-style '**/*.css'",
+    "check-engines": "wp-scripts check-engines",
+    "check-licenses": "wp-scripts check-licenses --prod --gpl2 --ignore=abab"
   },
   "author": "Adarsh Verma",
   "license": "ISC",
   "devDependencies": {
+    "@wordpress/hooks": "2.7.0",
     "@wordpress/scripts": "7.1.2"
   }
 }

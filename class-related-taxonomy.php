@@ -124,7 +124,7 @@ if ( ! class_exists( 'Related_Taxonomies' ) ) {
 			ob_start();
 			?>
 			<div class="gbrt-related-taxonomies-block">
-				<h2><?php echo ( isset( $attributes['heading'] ) ) ? wp_kses_post( $attributes['heading'] ) : ''; ?></h2>
+				<h2><?php echo ( isset( $attributes['block_title'] ) ) ? wp_kses_post( $attributes['block_title'] ) : ''; ?></h2>
 				<?php if( ! empty( $attributes['tags']  && is_array( $attributes['tags'] )) ) { ?>
 					<?php foreach( $attributes['tags'] as $tag ) { ?>
 						<span data-tagid="<?php echo esc_attr( $tag['id'] ); ?>">
